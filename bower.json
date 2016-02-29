@@ -9,6 +9,7 @@
 		"materialize": null,
 		"gridstack": null,
 		"Chart.js": null,
-		"jqvmap": null
+		"jqvmap": null,
+		"jquery.sparkline": null
 	}
 }

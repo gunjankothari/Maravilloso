@@ -214,7 +214,7 @@
 						</div>
 						<div class="card-action">
 							<div class="row">
-								<canvas id="barCanvas2" style="width:100%; height:50px"></canvas>
+								<span class="inlinesparkline" style="width100%">10,22,35,10,57,125,14,14,54,18,95,64,45,32,45,65,44,72,24,51,65,42,10,55,92,45</span>
 							</div>
 						</div>
 					</div>
@@ -266,9 +266,12 @@
 		<!-- Compiled and minified JavaScript -->
 		<script src="libraries/materialize/dist/js/materialize.min.js"></script>
 		<!-- Compiled and minified JavaScript -->
+		<script src="libraries/lodash/dist/lodash.min.js"></script>
 		<script src="libraries/gridstack/dist/gridstack.min.js"></script>
 		<!-- ChartJS JavaScript -->
 		<script src="libraries/Chart.js/Chart.min.js"></script>
+		<script type="text/javascript" src="libraries/jquery.sparkline/dist/jquery.sparkline.js"></script>
+
 		<script src="libraries/jqvmap/dist/jquery.vmap.js"></script>
 		<script src="libraries/jqvmap/dist/maps/jquery.vmap.world.js"></script>
 		<script src="libraries/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
@@ -278,30 +281,20 @@
 		$('.button-collapse').sideNav();
 	});
 	</script>
+	<script type="text/javascript">
+    $(function() {
+        $('.inlinesparkline').sparkline('html',{
+        	type:'bar',
+        	width: "100%",
+        	height:"50px",
+        	barWidth: "10px"
+        });
+    });
+    </script>
 	<script>
 	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
 	var barChartData = {
 		labels : ["January","February","March","April","May","June","July"],
-		datasets : [
-			{
-				fillColor : "rgba(220,220,220,0.5)",
-				strokeColor : "rgba(220,220,220,0.8)",
-				highlightFill: "rgba(220,220,220,0.75)",
-				highlightStroke: "rgba(220,220,220,1)",
-				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-			},
-			{
-				fillColor : "rgba(151,187,205,0.5)",
-				strokeColor : "rgba(151,187,205,0.8)",
-				highlightFill : "rgba(151,187,205,0.75)",
-				highlightStroke : "rgba(151,187,205,1)",
-				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
-			}
-		]
-	}
-	var barChartData2 = {
-		showScale: false,
-		scaleShowLabels: false,
 		datasets : [
 			{
 				fillColor : "rgba(220,220,220,0.5)",
@@ -382,11 +375,7 @@
 		window.myBar = new Chart(barCanvas).Bar(barChartData, {
 			responsive : true
 		});
-		var barCanvas2 = document.getElementById("barCanvas2").getContext("2d");
-		window.myBar2 = new Chart(barCanvas2).Bar(barChartData, {
-			responsive : true
-		});
-		
+
 		var doughnutChart = document.getElementById("doughnutChart").getContext("2d");
 		window.myDoughnut = new Chart(doughnutChart).Doughnut(doughnutData, {responsive : true});
 		
