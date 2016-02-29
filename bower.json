@@ -1,0 +1,14 @@
+{
+	"name": "admin",
+	"verion": "1.0.0",
+	"dependencies": {
+		"jquery": null,
+		"jqueryui": null,
+		"chartjs": null,
+		"highcharts": null,
+		"materialize": null,
+		"gridstack": null,
+		"Chart.js": null,
+		"jqvmap": null
+	}
+}

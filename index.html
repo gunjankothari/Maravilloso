@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="libraries/materialize/dist/css/materialize.css">
+		<!-- Gridstack CSS -->
+		<link href="libraries/gridstack/dist/gridstack.min.css" rel="stylesheet">
+		
+		<!-- Material Icons -->
+		<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<!-- Common CSS -->
+		<link rel="stylesheet" href="styles/common.css">
+		
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<!--Top Navigation and Sidebar -->
+		<header class="top-nav-wrapper page-topbar">
+			<div class="row">
+				<div class="navbar-fixed">
+					<nav class="blue-grey darken-3">
+						<div class="row">
+							<ul class="left">
+								<li id="logo-on-top">
+									<a href="#" class="brand-logo blue-grey darken-4 "><i class="material-icons left-align">games</i>Maravilloso</a>
+								</li>
+							</ul>
+							<div id="search-on-top" class="col l7 hide-on-med-and-down">
+								<form>
+									<div class="input-field">
+										<input id="search" type="search" required>
+										<label for="search"><i class="material-icons">search</i></label>
+									</div>
+								</form>
+							</div>
+							<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<!-- Side Navigation Bar-->
+			<div class="wrapper">
+				<aside id="left-sidebar-nav">
+					<ul id="nav-mobile" class="side-nav left-side-navigation blue-grey darken-3 fixed">
+						<li class="bold active">
+							<a href="#" class="waves-effect waves">Dashboard</a>
+						</li>
+						<li class="bold">
+							<a href="#" class="waves-effect waves">Mailbox</a>
+						</li>
+						<li class="bold">
+							<a href="#" class="waves-effect waves">Calendar</a>
+						</li>
+						<li class="bold">
+							<a href="#" class="waves-effect waves">Forms</a>
+						</li>
+						<li class="bold">
+							<a href="#" class="waves-effect waves">Tables</a>
+						</li>
+						<li class="bold">
+							<a href="#" class="waves-effect waves">e-Commerce</a>
+						</li>
+						<li class="bold">
+							<a href="#" class="waves-effect waves">Media</a>
+						</li>
+						
+					</ul>
+				</aside>
+			</div>
+			<!-- End Side Navigation Bar-->
+			
+		</header>
+		<!-- End Top Navigation and Side Navigation Bar-->
+		<div class="main">
+			<div class="row">
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Card Title</span>
+							<div class="row">
+								<canvas id="barCanvas" style="width:100%; height:250px"></canvas>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Card Title</span>
+							<div class="row">
+								<canvas id="doughnutChart" style="width:100%; height:250px"></canvas>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Card Title</span>
+							<div class="row">
+								<canvas id="lineCanvas" style="width:100%; height:250px"></canvas>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card">
+						<div class="card-content purple lighten-4">
+							<span class="card-title">Card Title</span>
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card">
+						<div class="card-content blue lighten-4">
+							<span class="card-title">Card Title</span>
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card">
+						<div class="card-content lime lighten-4">
+							<span class="card-title">Card Title</span>
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card">
+						<div class="card-content deep-orange lighten-4">
+							<span class="card-title">Card Title</span>
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="card">
+						<div class="card-content">
+							<div class="row">
+								<table class="striped">
+									<thead>
+										<tr>
+											<th data-field="id">Name</th>
+											<th data-field="name">Item Name</th>
+											<th data-field="price">Item Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Alvin</td>
+											<td>Eclair</td>
+											<td>$0.87</td>
+										</tr>
+										<tr>
+											<td>Alan</td>
+											<td>Jellybean</td>
+											<td>$3.76</td>
+										</tr>
+										<tr>
+											<td>Jonathan</td>
+											<td>Lollipop</td>
+											<td>$7.00</td>
+										</tr>
+										<tr>
+											<td>Shannon</td>
+											<td>KitKat</td>
+											<td>$9.99</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<canvas id="barCanvas2" style="width:100%; height:50px"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 l8 m8">
+					<div class="card">
+						<div class="card-content">
+							<div class="row">
+								<div id="vmap" style="width: 100%; height: 400px;"></div>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Card Title</span>
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Card Title</span>
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+						</div>
+						<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="libraries/jquery/dist/jquery.js"></script>
+		
+		<!-- Compiled and minified JavaScript -->
+		<script src="libraries/materialize/dist/js/materialize.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="libraries/gridstack/dist/gridstack.min.js"></script>
+		<!-- ChartJS JavaScript -->
+		<script src="libraries/Chart.js/Chart.min.js"></script>
+		<script src="libraries/jqvmap/dist/jquery.vmap.js"></script>
+		<script src="libraries/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+		<script src="libraries/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+	</body>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.button-collapse').sideNav();
+	});
+	</script>
+	<script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+	var barChartData = {
+		labels : ["January","February","March","April","May","June","July"],
+		datasets : [
+			{
+				fillColor : "rgba(220,220,220,0.5)",
+				strokeColor : "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(220,220,220,0.75)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			},
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,0.8)",
+				highlightFill : "rgba(151,187,205,0.75)",
+				highlightStroke : "rgba(151,187,205,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+	}
+	var barChartData2 = {
+		showScale: false,
+		scaleShowLabels: false,
+		datasets : [
+			{
+				fillColor : "rgba(220,220,220,0.5)",
+				strokeColor : "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(220,220,220,0.75)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			},
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,0.8)",
+				highlightFill : "rgba(151,187,205,0.75)",
+				highlightStroke : "rgba(151,187,205,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+	}
+		var doughnutData = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+			];
+		var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+		var lineChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					label: "My First dataset",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				},
+				{
+					label: "My Second dataset",
+					fillColor : "rgba(151,187,205,0.2)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(151,187,205,1)",
+					data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+				}
+			]
+		}
+	window.onload = function(){
+		var barCanvas = document.getElementById("barCanvas").getContext("2d");
+		window.myBar = new Chart(barCanvas).Bar(barChartData, {
+			responsive : true
+		});
+		var barCanvas2 = document.getElementById("barCanvas2").getContext("2d");
+		window.myBar2 = new Chart(barCanvas2).Bar(barChartData, {
+			responsive : true
+		});
+		
+		var doughnutChart = document.getElementById("doughnutChart").getContext("2d");
+		window.myDoughnut = new Chart(doughnutChart).Doughnut(doughnutData, {responsive : true});
+		
+		var lineCanvas = document.getElementById("lineCanvas").getContext("2d");
+		window.myLine = new Chart(lineCanvas).Line(lineChartData, {
+			responsive: true
+		});
+	}
+	</script>
+	<script>
+	jQuery('#vmap').vectorMap({
+	map: 'world_en',
+	backgroundColor: null,
+	color: '#ffffff',
+	hoverOpacity: 0.7,
+	selectedColor: '#666666',
+	enableZoom: true,
+	showTooltip: true,
+	values: sample_data,
+	scaleColors: ['#C8EEFF', '#006491'],
+	normalizeFunction: 'polynomial'
+	});
+	</script>
+</html>

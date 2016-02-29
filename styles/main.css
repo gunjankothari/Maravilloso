@@ -1,0 +1,31 @@
+/*
+* @Author: Admin
+* @Date:   2016-02-28 10:11:09
+* @Last Modified by:   Admin
+* @Last Modified time: 2016-02-28 10:40:28
+*/
+li#logo-on-top a i {
+	float: left;
+	margin: 4px 10px 0px;
+}
+li#logo-on-top a {
+	padding: 0px 10px;
+}
+div#search-on-top {
+	position: relative;
+	float: left;
+	margin-left: 252px;
+}
+div#search-on-top i {
+	position: relative;
+	float: left;
+}
+div#search-on-top input {
+	position: relative;
+	float: left;
+	width: 95%;
+}
+div#search-on-top input[type=text] {
+	border-bottom: none !important;
+	margin-left: 12px;
+}
